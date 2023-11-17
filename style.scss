@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	font-family: Montserrat, serif;
+}
+.wrapper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px;
+}
+
+.card {
+	box-shadow: 0px 0px 20px 1px #4e35a875;
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	height: clamp(300px, 70%, 70%);
+	padding: 20px;
+	border-radius: 20px;
+	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+	transition: 0.3s ease;
+
+	img {
+		transition: 0.3s ease;
+		width: 200px;
+		aspect-ratio: 1;
+	}
+
+	label {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		height: 40px;
+		gap: 20px;
+		input {
+			outline: none;
+			border-radius: 40px;
+			padding: 0;
+			flex: 1 1 auto;
+			height: 100%;
+			padding: 0 20px;
+			transition: 0.3s ease;
+		}
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			outline: none;
+			height: 100%;
+			aspect-ratio: 1;
+			padding: 0;
+			margin: 0;
+			border: none;
+			border-radius: 100%;
+			flex: 0 0;
+			cursor: pointer;
+			transition: 0.3s ease;
+
+			svg {
+				transition: 0.3s ease;
+				transform: scale(0.8);
+				will-change: transform;
+			}
+			&:hover {
+				svg {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+	&__body {
+		color: #037171;
+		margin: auto 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		p {
+			font-size: 45px;
+			font-style: italic;
+		}
+		h3 {
+			font-family: "Courier New", Courier, monospace;
+
+			text-align: center;
+			font-size: 50px;
+		}
+
+		span {
+			line-height: 2;
+		}
+	}
+}
