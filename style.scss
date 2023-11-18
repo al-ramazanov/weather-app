@@ -51,6 +51,9 @@ body {
 			height: 100%;
 			padding: 0 20px;
 			transition: 0.3s ease;
+			&:focus {
+				box-shadow: 0px 0px 10px #0e75d5;
+			}
 		}
 		button {
 			display: flex;
@@ -66,7 +69,10 @@ body {
 			flex: 0 0;
 			cursor: pointer;
 			transition: 0.3s ease;
-
+			&:active,
+			&:focus {
+				box-shadow: 0px 0px 10px #0e75d5;
+			}
 			svg {
 				transition: 0.3s ease;
 				transform: scale(0.8);
@@ -101,5 +107,11 @@ body {
 		span {
 			line-height: 2;
 		}
+	}
+
+	.wind-ico {
+		display: flex;
+		align-items: center;
+		gap: 15px;
 	}
 }

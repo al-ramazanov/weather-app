@@ -46,7 +46,7 @@ const temp = document.querySelector('.temp')
 const feels = document.querySelector('.feels')
 const ico = document.querySelector('.ico')
 const humidity = document.querySelector('.humidity')
-
+const wind = document.querySelector('.wind')
 
 
 form.addEventListener('submit', submitHandler)
@@ -88,7 +88,7 @@ async function submitHandler(e) {
 
 			feels.innerText = Math.round(weatherInfo['main']['feels_like']) + " " + '°C';
 
-
+			wind.innerText = Math.round(weatherInfo['wind']['speed']) + ' ' + 'm/s'
 
 			ico.src = `https://openweathermap.org/img/wn/${icoPic}@4x.png`;
 		}
@@ -160,4 +160,5 @@ function getUserLocation() {
 	} else { console.log("not support"); }
 }
 local.addEventListener('click', getUserLocation)
+
 getUserLocation()

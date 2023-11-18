@@ -54,6 +54,9 @@ body {
   padding: 0 20px;
   transition: 0.3s ease;
 }
+.card label input:focus {
+  box-shadow: 0px 0px 10px #0e75d5;
+}
 .card label button {
   display: flex;
   align-items: center;
@@ -68,6 +71,9 @@ body {
   flex: 0 0;
   cursor: pointer;
   transition: 0.3s ease;
+}
+.card label button:active, .card label button:focus {
+  box-shadow: 0px 0px 10px #0e75d5;
 }
 .card label button svg {
   transition: 0.3s ease;
@@ -96,4 +102,9 @@ body {
 }
 .card__body span {
   line-height: 2;
+}
+.card .wind-ico {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }/*# sourceMappingURL=style.css.map */
