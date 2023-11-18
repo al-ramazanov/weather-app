@@ -107,4 +107,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+.card .wind-ico svg {
+  fill: currentColor;
 }/*# sourceMappingURL=style.css.map */

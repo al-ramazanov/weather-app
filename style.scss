@@ -113,5 +113,8 @@ body {
 		display: flex;
 		align-items: center;
 		gap: 15px;
+		svg {
+			fill: currentColor;
+		}
 	}
 }
